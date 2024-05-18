@@ -1,9 +1,9 @@
 import json
 
 data = {
-    "chocolat":"vanille",
-    2 : 3,
-    "réel" :"imaginaire",
-    "Un hôtel ?" :"Trivago",
-    "La terre est plate" : False
+    2:3,
+    3:2,
+    1.0 : -5.3,
+    7 : 13
 }
+
