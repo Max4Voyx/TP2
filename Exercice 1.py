@@ -17,7 +17,9 @@ with open('data.json', 'w') as json_file:
 
 
 with open("data.json", 'r') as jf:
-    donnee = json.load(jf)
+    donneeL = json.load(jf)
+    for ligne in donneeL:
+        print(ligne)
 
 with open('data.csv', mode='w') as cf:
 
@@ -25,6 +27,10 @@ with open('data.csv', mode='w') as cf:
 
     donneW.writerow(['reel', 'imaginaire'])
 
+print(f"\n############################\n")
 
+with open('data.csv', mode='r') as cL:
+    donneecsv= csv.reader(cL, delimiter=',')
 
-
+    for row in donneecsv:
+        print(row)
